@@ -1,0 +1,491 @@
+html{ 
+background-image: url("https://cdn.discordapp.com/attachments/563104328995307550/1166643716245684285/fondo.png"); 
+background-repeat:repeat; 
+background-attachment: fixed; 
+}
+
+body{
+margin:0;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+left:0;
+display:flex;
+background-color:#111;
+justify-content:space-between;
+align-items:center;
+z-index:99;
+}
+
+#logo{
+padding-left:30px;
+height:30;
+}
+
+ul{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:#111;
+font-family:'Heebo',sans-serif;
+font-weight:600;
+font-size:15px;
+padding-right:30px;
+}
+
+li{
+float:right;
+}
+
+li a{
+display:block;
+color:#f1f1f1;
+text-align:center;
+padding:18px 26px;
+text-decoration:none;
+}
+
+li a:hover{
+color:#f02f2f;
+}
+
+#imageninicio{
+margin-top: 270px;
+width: 50vw;
+margin-left: 25%;
+}
+
+#inicio{
+height: 100vh;
+}
+
+h1{
+margin-top:20px;
+font-family:'Heebo',sans-serif;
+font-weight:400;
+text-align:center;
+color:#9c9c9c;
+font-size:21px;
+width:40vw;
+margin-left:30vw;
+}
+
+#subtituloinicio{
+margin-top: 50px;
+font-size:25px;
+color: #f02f2f;
+font-weight: 500;
+}
+
+#cuerpoinicio{
+width:100%;
+height:100vh;
+background-color:#111;
+opacity:90%;
+margin:0 auto;
+display: flex;
+}
+
+#contenedordetexto{
+width: 50vw;
+}
+
+#textolargo{
+text-align: center;
+font-size:27px;
+font-family:'Heebo',sans-serif;
+font-weight:300;
+color:#ddd;
+width: 80%;
+margin-left: 10%;
+margin-top: 300px;
+}
+
+#cuadradodiseño{
+width: 50vw;
+}
+
+#tituloprincipal{
+margin-top:200px;
+width:50vw;
+margin-left:25vw;
+}
+
+#roster{
+margin-top:119px;
+width:16vw;
+margin-left:42vw;
+}
+
+#cajablanca{
+width:100%;
+background-color:#f8f8f8;
+margin-top:150px;
+left:0;
+}
+
+#cajablanca2{
+width:100%;
+margin-top:50px;
+left:0;
+}
+
+#contenedortorneos{
+padding-top:110px;
+margin-left:5%;
+width:90%;
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+grid-auto-rows:350px;
+justify-items:center;
+}
+
+#torneo{
+margin-left:5%;
+width:90%;
+align-self: self-end;
+}
+
+#pietorneo{
+text-align:center;
+font-size:13px;
+font-family:'Heebo',sans-serif;
+font-weight:600;
+color:#8f8f8f;
+}
+
+#contenedordepartidas{
+margin-left:10%;
+width:80%;
+padding-top:80px;
+}
+
+#partida{
+font-family:'Heebo',sans-serif;
+font-weight:400;
+color:#f1f1f1;
+height:130px;
+background-color:#151515;
+margin-top:20px;
+display:grid;
+grid-template-columns:10% 70% 20%;
+}
+
+#div1{
+align-self:center;
+text-align:center;
+font-weight:700;
+font-size:25px;
+color:#f8f8f8;
+}
+
+#div2{
+font-size:15px;
+margin-left:25px;
+}
+
+#div3{
+align-self:center;
+text-align:center;
+font-weight:700;
+font-size:30px;
+color:#8af02f;
+}
+
+#titulopartida{
+font-size:30;
+font-weight:700;
+padding-top:3px;
+}
+
+#subtitulopartida{
+margin-top:-35;
+font-size:14px;
+font-weight:500;
+color:#999999;
+}
+
+#victoria{
+color:#8af02f;
+}
+
+#derrota{
+color:#f02f2f;
+}
+
+#vodA{
+color:#f02f2f;
+}
+
+#top{
+margin-left: 4px;
+margin-right: 4px;
+width: 20%;
+height: 630px;
+background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897255123525652/rivenbw.png);
+}
+
+#top:hover{
+animation: fadeIn 0.5s;
+background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897254607630366/riven.png);
+}
+
+#jg{
+margin-left: 4px;
+margin-right: 4px;
+width: 20%;
+height: 630px;
+background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897253282218024/leebw.png)
+}
+
+#jg:hover{
+animation: fadeIn 0.5s;
+background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897252904738907/lee.png);
+}
+
+#mid{
+margin-left: 4px;
+margin-right: 4px;
+width: 20%;
+height: 630px;
+background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897255803007066/azirbw.png)
+}
+
+#mid:hover{
+animation: fadeIn 0.5s;
+background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897255480033410/azir.png);
+}
+
+#adc{
+margin-left: 4px;
+margin-right: 4px;
+width: 20%;
+height: 630px;
+background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897256851583046/jhinbw.png)
+}
+
+#adc:hover{
+animation: fadeIn 0.5s;
+background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897256360837140/jhin.png);
+}
+
+#sup{
+margin-left: 4px;
+margin-right: 4px;
+width: 20%;
+height: 630px;
+background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897254192382023/pykebw.png)
+}
+
+#sup:hover{
+animation: fadeIn 0.5s;
+background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897253693268128/pyke.png);
+}
+
+@keyframes fadeIn {
+0% { opacity: 0.5; }
+100% { opacity: 1; }
+}
+
+#contenedorroster{
+height: 100vh;
+}
+
+#jugadores{
+background-color: #111;
+margin-top: 40px;
+width: 80%;
+padding-left: 10%;
+padding-right: 10%;
+display: flex;
+}
+
+#cajanombre{
+background-color: #f1f1f1;
+margin-top: 453px;
+text-align: center;
+font-family:'Heebo',sans-serif;
+}
+#conjuntonombres{
+padding: 5px;
+padding-bottom: 19px
+}
+
+#nombreplayer{
+color: #111;
+font-weight: 700;
+font-size:25px;
+}
+
+#infoplayer{
+color: #f02f2f;
+font-weight: 700;
+margin-top: -30px;
+font-size: 13px;
+}
+
+#guerreros{
+text-align: center;
+color: #9c9c9c;
+font-family:'Heebo',sans-serif;
+font-size: 18px;
+}
+
+.footer{
+margin-top: 80px;
+width:100%;
+height:350px;
+background-color:rgba(24, 24, 24, 0.7);
+font-family:'Heebo',sans-serif;
+color:#ddd;
+font-weight: 300;
+text-align: center;
+}
+
+.footer_main{
+width: 90%;
+margin-left: 5%;
+display: flex;
+flex-direction: row;
+height: 280px;
+opacity: 100%;
+}
+
+#fmain1{
+width: 20%;
+}
+
+.footerlogo{
+margin-top: 12%;
+opacity: 100%;
+height: 70%;
+}
+
+.fmain2{
+width:15%;
+padding-left: 5%;
+margin-top: 1%;
+font-size: 20px;
+
+text-align: start;
+display: flex;
+flex-direction: column;
+}
+
+#fmain3{
+width:25%;
+padding-left: 5%;
+margin-top: 1%;
+font-size: 20px;
+text-align: start;
+display: flex;
+flex-direction: column;
+}
+
+h2{
+font-family:'Heebo',sans-serif;
+color:#ddd;
+font-weight: 600;
+font-size: 25px;
+}
+
+.fmain4{
+margin-top: 6%;
+width: 22%;
+}
+
+#redesfooter{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+#imganchor{
+width: 15%;
+}
+
+#logored{
+    width: 100%;
+}
+
+#sponsorsfooter{
+display: flex;
+flex-direction: row;
+margin-left: 10%;
+width: 80%;
+justify-content: space-around;
+align-items: center;
+}
+
+#sponsorsfooter img{
+    width:45%
+    }
+
+.divisor{
+height: 2px;
+background-color: #505050;
+width: 90vw;
+margin-left: 5vw;
+}
+
+.footer_secondary{
+margin-top: 9px;
+width: 90vw;
+margin-left: 5vw;
+display: grid;
+grid-template-columns: 45% 10% 45%;
+justify-content: space-between;
+}
+
+.footer_terms{
+display: flex;
+justify-content: space-around;
+}
+
+.aterms{
+color: #9c9c9c;
+}
+
+#footeranchor{
+    color: #ddd;
+    text-decoration: none;
+}
+
+#footeranchor:hover{
+    color: #f02f2f;
+}
+
+#contendorredes{
+width: 100%;
+height: 50vh;
+margin-top: 25vh;
+margin-bottom: 13vh;
+background-color: #111;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+#cuadradored{
+width: 24%;
+height: 100%;
+background-color: #f8f8f8;
+}
+
+#cuadradored:hover{
+    background-color: #111;
+}
+
+#miniaturacuadrado{
+width: 40%;
+margin:30%
+}
+
+#miniaturacuadrado:hover{
+    width: 50%;
+    margin:25%
+    }

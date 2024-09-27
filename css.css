@@ -6,9 +6,11 @@ background-attachment: fixed;
 
 body{
 margin:0;
+background-color: #151515;
 }
 
 nav{
+height: 80px;
 position:fixed;
 top:0;
 width:100%;
@@ -21,8 +23,13 @@ z-index:99;
 }
 
 #logo{
-padding-left:30px;
-height:30;
+padding-left:25px;
+height:60px;
+}
+
+#logo:hover{
+padding-left:23px;
+height: 64px;
 }
 
 ul{
@@ -31,7 +38,7 @@ margin:0;
 padding:0;
 overflow:hidden;
 background-color:#111;
-font-family:'Heebo',sans-serif;
+font-family:'Open Sans',sans-serif;
 font-weight:600;
 font-size:15px;
 padding-right:30px;
@@ -50,22 +57,24 @@ text-decoration:none;
 }
 
 li a:hover{
-color:#f02f2f;
+color:#e10010;
 }
 
 #imageninicio{
-margin-top: 270px;
-width: 50vw;
-margin-left: 25%;
+height: 100px;
 }
 
 #inicio{
 height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 h1{
 margin-top:20px;
-font-family:'Heebo',sans-serif;
+font-family:'Open Sans',sans-serif;
 font-weight:400;
 text-align:center;
 color:#9c9c9c;
@@ -75,9 +84,8 @@ margin-left:30vw;
 }
 
 #subtituloinicio{
-margin-top: 50px;
 font-size:25px;
-color: #f02f2f;
+color: #e10010;
 font-weight: 500;
 }
 
@@ -94,15 +102,33 @@ display: flex;
 width: 50vw;
 }
 
+#cuadradodiseñoblanco {
+    width: 50%;
+    background-color: #ddd;
+}
+
+#cuadradodiseñorojo {
+    width: 50%;
+    background-color: #e10010;
+}
+
 #textolargo{
 text-align: center;
 font-size:27px;
-font-family:'Heebo',sans-serif;
+font-family:'Open Sans',sans-serif;
 font-weight:300;
 color:#ddd;
 width: 80%;
 margin-left: 10%;
 margin-top: 300px;
+}
+
+#textolargo b{
+    color: #ddd;
+}
+
+#textolargo b a{
+    color: #ddd;
 }
 
 #cuadradodiseño{
@@ -153,7 +179,7 @@ align-self: self-end;
 #pietorneo{
 text-align:center;
 font-size:13px;
-font-family:'Heebo',sans-serif;
+font-family:'Open Sans',sans-serif;
 font-weight:600;
 color:#8f8f8f;
 }
@@ -161,15 +187,14 @@ color:#8f8f8f;
 #contenedordepartidas{
 margin-left:10%;
 width:80%;
-padding-top:80px;
 }
 
 #partida{
-font-family:'Heebo',sans-serif;
+font-family:'Open Sans',sans-serif;
 font-weight:400;
 color:#f1f1f1;
 height:130px;
-background-color:#151515;
+background-color:#111;
 margin-top:20px;
 display:grid;
 grid-template-columns:10% 70% 20%;
@@ -214,11 +239,11 @@ color:#8af02f;
 }
 
 #derrota{
-color:#f02f2f;
+color:#e10010;
 }
 
 #vodA{
-color:#f02f2f;
+color:#e10010;
 }
 
 #top{
@@ -226,12 +251,10 @@ margin-left: 4px;
 margin-right: 4px;
 width: 20%;
 height: 630px;
-background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897255123525652/rivenbw.png);
 }
 
 #top:hover{
 animation: fadeIn 0.5s;
-background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897254607630366/riven.png);
 }
 
 #jg{
@@ -239,12 +262,10 @@ margin-left: 4px;
 margin-right: 4px;
 width: 20%;
 height: 630px;
-background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897253282218024/leebw.png)
 }
 
 #jg:hover{
 animation: fadeIn 0.5s;
-background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897252904738907/lee.png);
 }
 
 #mid{
@@ -252,12 +273,10 @@ margin-left: 4px;
 margin-right: 4px;
 width: 20%;
 height: 630px;
-background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897255803007066/azirbw.png)
 }
 
 #mid:hover{
 animation: fadeIn 0.5s;
-background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897255480033410/azir.png);
 }
 
 #adc{
@@ -265,12 +284,10 @@ margin-left: 4px;
 margin-right: 4px;
 width: 20%;
 height: 630px;
-background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897256851583046/jhinbw.png)
 }
 
 #adc:hover{
 animation: fadeIn 0.5s;
-background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897256360837140/jhin.png);
 }
 
 #sup{
@@ -278,12 +295,10 @@ margin-left: 4px;
 margin-right: 4px;
 width: 20%;
 height: 630px;
-background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897254192382023/pykebw.png)
 }
 
 #sup:hover{
 animation: fadeIn 0.5s;
-background-image: url(https://cdn.discordapp.com/attachments/563104328995307550/1166897253693268128/pyke.png);
 }
 
 @keyframes fadeIn {
@@ -299,16 +314,25 @@ height: 100vh;
 background-color: #111;
 margin-top: 40px;
 width: 80%;
+height: auto;
 padding-left: 10%;
 padding-right: 10%;
 display: flex;
 }
 
+#jugadores div{
+    height: auto;
+}
+
+#fotocampeon{
+    width: 100%;
+    background-color: #8af02f;
+}
+
 #cajanombre{
 background-color: #f1f1f1;
-margin-top: 453px;
 text-align: center;
-font-family:'Heebo',sans-serif;
+font-family:'Open Sans',sans-serif;
 }
 #conjuntonombres{
 padding: 5px;
@@ -322,7 +346,7 @@ font-size:25px;
 }
 
 #infoplayer{
-color: #f02f2f;
+color: #e10010;
 font-weight: 700;
 margin-top: -30px;
 font-size: 13px;
@@ -331,16 +355,17 @@ font-size: 13px;
 #guerreros{
 text-align: center;
 color: #9c9c9c;
-font-family:'Heebo',sans-serif;
+font-family:'Open Sans',sans-serif;
 font-size: 18px;
+font-weight: 400;
 }
 
 .footer{
 margin-top: 80px;
 width:100%;
 height:350px;
-background-color:rgba(24, 24, 24, 0.7);
-font-family:'Heebo',sans-serif;
+background-color:#111;
+font-family:'Open Sans',sans-serif;
 color:#ddd;
 font-weight: 300;
 text-align: center;
@@ -370,11 +395,11 @@ width:15%;
 padding-left: 5%;
 margin-top: 1%;
 font-size: 20px;
-
 text-align: start;
 display: flex;
 flex-direction: column;
 }
+
 
 #fmain3{
 width:25%;
@@ -387,9 +412,9 @@ flex-direction: column;
 }
 
 h2{
-font-family:'Heebo',sans-serif;
+font-family:'Open Sans',sans-serif;
 color:#ddd;
-font-weight: 600;
+font-weight: 700;
 font-size: 25px;
 }
 
@@ -406,10 +431,17 @@ justify-content: space-around;
 
 #imganchor{
 width: 15%;
+color: #e10010;
 }
 
 #logored{
-    width: 100%;
+width: 100%;
+color: #e10010;
+font-size: 40px;
+}
+
+#logored:hover{
+    color: #ddd;
 }
 
 #sponsorsfooter{
@@ -422,8 +454,8 @@ align-items: center;
 }
 
 #sponsorsfooter img{
-    width:45%
-    }
+width:45%
+}
 
 .divisor{
 height: 2px;
@@ -451,20 +483,21 @@ color: #9c9c9c;
 }
 
 #footeranchor{
-    color: #ddd;
-    text-decoration: none;
+color: #ddd;
+text-decoration: none;
+font-weight: 300;
 }
 
 #footeranchor:hover{
-    color: #f02f2f;
+color: #e10010;
 }
 
 #contendorredes{
 width: 100%;
 height: 50vh;
-margin-top: 25vh;
+padding-top: 25vh;
 margin-bottom: 13vh;
-background-color: #111;
+background-color: #151515;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
@@ -473,19 +506,21 @@ justify-content: space-around;
 #cuadradored{
 width: 24%;
 height: 100%;
-background-color: #f8f8f8;
+background-color: #ddd;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 #cuadradored:hover{
-    background-color: #111;
+background-color: #f3f3f3;
 }
 
 #miniaturacuadrado{
-width: 40%;
-margin:30%
+color: #e10010;
+font-size: 140px;
 }
 
 #miniaturacuadrado:hover{
-    width: 50%;
-    margin:25%
-    }
+    font-size: 160px;
+}

@@ -53,6 +53,7 @@ function renderPlayers(){
                 cuplist.forEach(player => {
                     document.getElementById("jugadores").innerHTML +=`
                     <div id="${player.cat}">
+                        <img src="${player.fotocampeon}" alt="" id="fotocampeon">
                         <a href="${player.linkredes}" style="text-decoration: none;" target="_blank">
                             <div id="cajanombre">
                                 <div id="conjuntonombres">

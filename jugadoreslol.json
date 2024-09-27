@@ -3,30 +3,35 @@
         "nombre":"RYU", 
         "rol":"TOP LANER",
         "cat":"top",
+        "fotocampeon":"assets/aatrox.webp",
         "linkredes":"https://twitter.com/Dertako1"
     },
     {
         "nombre":"TZ NAINESS", 
         "rol":"JUNGLER",
         "cat":"jg",
+        "fotocampeon":"assets/aatrox.webp",
         "linkredes":"https://twitter.com/zNainess"
     },
     {
         "nombre":"SEN JISOO", 
         "rol":"MID LANER",
         "cat":"mid",
+        "fotocampeon":"assets/aatrox.webp",
         "linkredes":"https://twitter.com/Jiss3_"
     },
     {
         "nombre":"SEN KLASS", 
         "rol":"AD CARRY",
         "cat":"adc",
+        "fotocampeon":"assets/aatrox.webp",
         "linkredes":"https://twitter.com/Zscinn_"
     },
     {
         "nombre":"SEN EZMOOU", 
         "rol":"SUPPORT",
         "cat":"sup",
+        "fotocampeon":"assets/aatrox.webp",
         "linkredes":"https://twitter.com/ezmoou"
     }
 ]}
